@@ -1,0 +1,14 @@
+.experts {
+    &__title {
+        font-family: 'Poppins';
+        @include font (600, 75px, $text-white);
+        width: 524px;
+        height: 112px;
+        margin: 0 auto 52px;
+    }
+    &__img {
+        margin: 0 auto;
+        width: 1827px;
+        height: 442px;
+    }
+}

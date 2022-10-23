@@ -1,0 +1,70 @@
+.start {
+    color: $text-white;
+    margin: 188px 0 183px 0;
+    &__content {
+        width: 880px;
+        height: 588px;
+        margin: 0 auto;
+    }
+    &__logo {
+        width: 165px;
+        height: 152px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-family: 'Poppins';
+        @include font (700, 100px, $text-white);
+        width: 830px;
+        height: 150px;
+        margin: 20px auto 0;
+    }
+    &__description {
+        font-family: 'Poppins';
+        @include font (400, 43px, $text-white);
+    }
+    &__button {
+        width: 472px;
+        height: 102px;
+        display: flex;
+        justify-content: space-between;
+        margin: 14px auto 0;
+        font-family: 'Poppins';
+    }
+    &__btn {
+        font-family: 'Poppins';
+        @include font (500, 30px, $text-grey);
+        background: #0E0E0E;
+        border: solid $text-grey 1px;
+        border-radius: 15px;
+        padding: 28px 112px;
+        transition: 0.35s;
+    }
+    &__btn:hover {
+        background: $bg-blue;
+        color: $text-white;
+        border: solid transparent 1px;
+        transition: 0.35s;
+    }
+    &__creators {
+        width: 750px;
+        height: 57px;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Poppins';
+        margin: 26px auto 0;
+        align-items: center;
+
+        &--counterFirst {
+            @include font (700, 38px, $text-white);
+        }
+
+        &--counterSecond {
+            @include font (400, 38px, $text-grey);
+        }
+
+        &--dot {
+            width: 37px;
+            height: 37px;
+        }
+    }   
+}

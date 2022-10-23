@@ -1,0 +1,31 @@
+.share {
+    color: $text-white;
+    &__content {
+        width: 886px;
+        height: 230px;
+        margin: 71px auto 176px;
+    }
+    &__step {
+        font-family: 'Poppins';
+        @include font (500, 25px, $bg-blue);
+        width: 79px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-family: 'Poppins';
+        @include font (600, 75px, $text-white);
+        width: 860px;
+        height: 112px;
+        margin: 0 auto;
+    }
+    &__description {
+        font-family: 'Poppins';
+        @include font (400, 30px, $text-grey);
+        width: 886px;
+        height: 90px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+}

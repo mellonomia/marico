@@ -1,0 +1,103 @@
+.create {
+    color: $text-white;
+    &__content {
+        width: 1734px;
+        height: 715px;
+        margin: 0 auto;
+        display: flex;
+    }
+    &__name {
+        font-family: 'Poppins';
+        @include font (500, 30px, $text-white);
+        line-height: 45px;
+    }
+    &__title {
+        font-family: 'Poppins';
+        @include font (600, 75px, $text-white);
+        width: 697px;
+        height: 224px;
+        margin-bottom: 17px;
+        &--second {
+            color: $bg-blue;
+        }
+    }
+    &__description {
+        display: flex;
+        align-items: center;
+        width: 726px;
+        &--number {
+            background: #2D2D2D;
+            padding: 3px 13px 2px 13px;
+            border-radius: 50%;
+            font-family: 'Poppins';
+            @include font (500, 18px, $text-white);
+            line-height: 27px;
+            margin-top: 9px;
+
+        }
+        &--numberTwo{
+            background: #2D2D2D;
+            padding: 3px 11px 2px 11px;
+            border-radius: 50%;
+            font-family: 'Poppins';
+            @include font (500, 18px, $text-white);
+            line-height: 27px;
+            margin-top: 9px;
+        
+        }
+        &--text {
+            font-family: 'Poppins';
+            @include font (400, 23px, $text-white);
+            line-height: 34px;
+            margin: 10px 0 0 12px;
+            width: 686px;
+        }
+    }
+    &__button {
+        width: 438px;
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        margin: 66px 0 0 0;
+        font-family: 'Poppins';
+    }
+    &__start {
+        font-family: 'Poppins';
+        @include font (500, 20px, $text-grey);
+        background: #0E0E0E;
+        border: solid $text-grey 1px;
+        border-radius: 15px;
+        padding: 18px 21px;
+        transition: 0.35s;
+    }
+    &__start:hover {
+        background: $bg-blue;
+        color: $text-white;
+        border: solid transparent 1px;
+        transition: 0.35s;
+    }
+
+    &__demo {
+        font-family: 'Poppins';
+        @include font (500, 20px, $text-grey);
+        background: #0E0E0E;
+        border: solid $text-grey 1px;
+        border-radius: 15px;
+        padding: 18px 38px;
+        transition: 0.35s;
+    }
+    &__demo:hover {
+        background: $bg-blue;
+        color: $text-white;
+        border: solid transparent 1px;
+        transition: 0.35s;
+    }
+    &__img {
+        margin: -20px 0 0 175px;
+    }
+    &__left {
+        width: 686px;
+        height: 589px;
+        margin: 0 0 0 82px;
+    }
+}

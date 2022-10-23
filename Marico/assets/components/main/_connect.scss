@@ -1,0 +1,49 @@
+.connect {
+    color: $text-white;
+    &__content {
+        width: 929px;
+        height: 342px;
+        margin: 160px auto 182px ;
+    }
+    &__step {
+        font-family: 'Poppins';
+        @include font (600, 25px, $bg-blue);
+        width: 75px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-family: 'Poppins';
+        @include font (600, 75px, $text-white);
+        width: 846px;
+        height: 112px;
+        margin: 0 auto;
+    }
+    &__description {
+        font-family: 'Poppins';
+        @include font (400, 30px, $text-grey);
+        width: 929px;
+        height: 90px;
+        text-align: center;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;        
+    }
+    &__view {
+        font-family: 'Poppins';
+        @include font (600, 20px, $text-grey);
+        background: transparent;
+        border: solid $text-grey 1px;
+        border-radius: 15px;
+        padding: 24px 38px;
+        margin: 34px auto 0;
+        transition: 0.35s;
+    }
+    &__view:hover {
+        background: $bg-blue;
+        color: $text-white;
+        border: solid transparent 1px;
+        transition: 0.35s;
+    }
+}

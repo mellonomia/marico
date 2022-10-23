@@ -1,0 +1,41 @@
+.footer {
+    &__content {
+        width: 1641px;
+        height: 106px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 140px 60px 140px;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        text-align: center;
+        &--text {
+            font-family: 'Poppins';
+            font-weight: 800;
+            font-size: 42px;
+            margin-left: 16px;
+            margin-top: 7px;
+            color: $text-white
+        }
+    }
+    &__mail {
+        font-family: 'Poppins';
+        @include font (400, 27px, $text-grey)
+    }
+    &__list {
+        display: flex;
+        width: 476px;
+        justify-content: space-between;
+
+    }
+    &__link {
+        font-family: 'Poppins';
+        @include font (500, 28px, $text-grey);
+        transition: 0.25s;
+    }
+    &__link:hover {
+        color: $bg-blue;
+        transition: 0.25s;
+    }
+}

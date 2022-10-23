@@ -1,0 +1,68 @@
+.header {
+    padding: 46px 140px 0 140px;
+    &__content{
+        width: 1640px;
+        height: 56px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        text-align: center;
+        &--text {
+            font-family: 'Poppins';
+            font-weight: 800;
+            font-size: 37px;
+            margin-left: 16px;
+            margin-top: 7px;
+            color: $text-white
+        }
+    }
+    &__list {
+        display: flex;
+        width: 398px;
+        justify-content: space-between;
+
+    }
+    &__link {
+        font-family: 'Poppins';
+        @include font (500, 20px, $text-grey);
+        transition: 0.25s;
+    }
+    &__link:hover {
+        color: $bg-blue;
+        transition: 0.25s;
+    }
+    &__registration {
+        display: flex;
+        width: 198px;
+        justify-content: space-between;
+        &--link {
+            font-family: 'Poppins';
+            @include font (500, 20px, $text-grey);
+        }
+        &--link:hover {
+            color: $bg-blue;
+            transition: 0.25s;
+        }
+        &--btn {
+            font-family: 'Poppins';
+            @include font (400, 20px, $text-grey);
+            background: transparent;
+            border: solid $text-grey 1px;
+            border-radius: 7px;
+            padding: 12px 21px;
+            transition: 0.25s;
+        }
+        &--btn:hover {
+            background: $bg-blue;
+            color: $text-white;
+            border: solid transparent 1px;
+            transition: 0.25s;
+        }
+    }
+    
+}
+

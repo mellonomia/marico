@@ -1,0 +1,30 @@
+.send {
+    color: $text-white;
+    &__content {
+        width: 1109px;
+        height: 230px;
+        margin: 189px auto 189px;
+    }
+    &__step {
+        font-family: 'Poppins';
+        @include font (500, 25px, $bg-blue);
+        width: 79px;
+        height: 38px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-family: 'Poppins';
+        @include font (500, 75px, $text-white);
+        width: 1109px;
+        height: 112px;
+        margin: 0 auto;
+    }
+    &__description {
+        font-family: 'Poppins';
+        @include font (400, 30px, $text-grey);
+        width: 915px;
+        height: 90px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,72 @@
+input, label {
+    transition: .3s;
+}
+
+.signup {
+  &__caption {
+    width: 395px;
+    height: 146px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 79px;
+  }
+  &__title {
+    font-family: 'Poppins';
+    @include font (600, 75px, $text-white);
+    line-height: 112px;
+  }
+  &__description {
+    font-family: 'Poppins';
+    @include font (400, 24px, $text-white);
+  }
+  &__form {
+    top: 75px;
+    width: 1119px;
+    height: 202px;
+    margin: 0 auto;
+    font-family: 'Poppins';
+    color: $text-white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+   
+    &--group {
+      width: 487px;
+      height: 52px;
+    }
+    &--input {
+      font-family: 'Poppins';
+      @include font (400, 23px, $text-white);
+      width: 100%;
+      padding: 0 0 10px 0;
+      border: none;
+      border-bottom: 1px solid $text-grey;
+      background-color: transparent;
+      outline: none;
+      transition: 0.3s;
+    }
+  }
+  &__btn {
+    position: absolute;
+    font-family: 'Poppins';
+    @include font (400, 26px, $text-grey);
+    background: transparent;
+    border: solid $text-grey 1px;
+    border-radius: 15px;
+    padding: 23px 194px;
+    transition: 0.25s;
+    left: 631px;
+    top: 117px;
+  }
+  &__btn:hover {
+    background: $bg-blue;
+    color: $text-white;
+    border: solid transparent 1px;
+    transition: 0.25s;
+  }
+}
+  
+.push {
+  margin-bottom: 81px;
+}

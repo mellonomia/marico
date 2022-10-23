@@ -1,0 +1,78 @@
+.link {
+    color: $text-white;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 1731px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    &__left {
+        width: 854px;
+        height: 666px;
+        background: #0D0D0D;
+        &--name {
+            font-family: 'Poppins';
+            @include font (400, 30px, $text-green);
+            width: 125px;
+            height: 45px;
+            margin: 33px 0 0 45px;
+        }
+        &--title {
+            font-family: 'Poppins';
+            @include font (600, 80px, $text-lightgrey);
+            width: 623px;
+            height: 212px;
+            margin: 24px 0 0 45px;
+            line-height: 100px;
+        }
+        &--secondTitle {
+            color: $text-white;
+            line-height: 100px;
+
+        }
+        &--img {
+            margin: 14px 0 0 66px;
+        }
+    }
+    &__right {
+        width: 854px;
+        height: 666px;
+        background: #0D0D0D;
+        &--name {
+            width: 289px;
+            height: 45px;
+            font-family: 'Poppins';
+            @include font (400, 30px, $text-green);
+            margin: 33px 0 0 30px;
+        }
+        &--title {
+            max-width: 415px;
+            height: 279px;
+            font-family: 'Poppins';
+            @include font (700, 80px, $text-lightgrey);
+            line-height: 93px;
+            margin: 96px 0 0 30px;
+        }
+        &--secondTitle {
+            color: $text-white;
+        }
+    }
+    &__start {
+        font-family: 'Poppins';
+        @include font (500, 20px, $text-grey);
+        background: transparent;
+        border: solid $text-grey 1px;
+        border-radius: 15px;
+        padding: 22px 87px;
+        margin: 0 auto;
+        margin-top: 49px;
+        transition: 0.35s;
+    }
+    &__start:hover {
+        background: $bg-blue;
+        color: $text-white;
+        border: solid transparent 1px;
+        transition: 0.35s;
+    }
+}

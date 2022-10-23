@@ -1,0 +1,45 @@
+.features {
+    &__title {
+        font-family: 'Poppins';
+        @include font (600, 75px, $text-white);
+        line-height: 112px;
+        width: 995px;
+        margin: 0 auto;
+        padding: 188px 0 64px 0;
+    }
+    &__group {
+        width: 1483px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__secure, &__unloaded, &__moretime {
+        display: flex;
+        height: 95px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &--title {
+            font-family: 'Poppins';
+            @include font (600, 35px, $text-white);
+            line-height: 52px;
+            margin-left: 8px;
+        }
+        &--description {
+            font-family: 'Poppins';
+            @include font (400, 21px, $text-grey);
+            line-height: 33px;
+        }
+    }
+    &__secure {
+        width: 443px;
+
+    }
+    &__unloaded {
+        width: 440px;
+    }
+    &__moretime {
+        width: 400px;
+    }
+
+}

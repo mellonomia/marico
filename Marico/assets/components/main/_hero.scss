@@ -1,0 +1,97 @@
+.hero {
+    &__title {
+        padding: 128px 0 136px 0;
+        text-align: center;
+        width: 1362.87px;
+        font-family: 'Poppins';
+        @include font (700, 111px, $text-white);
+        font-style: normal;
+        line-height: 168px;
+        margin: 0 auto;
+
+        &--second {
+            display: inline-block;
+            color: #FE6783;
+            font-size: 111px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 112px;
+            background: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: table;
+            margin: 0 auto;
+            line-height: 128px;
+        }
+    }
+
+    &__description {
+        font-family: 'Poppins';
+        @include font (500, 40px, $text-white);
+        width: 694px;
+        height: 120px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__button {
+        width: 652px;
+        height: 77px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto 21px;
+        font-family: 'Poppins';
+    }
+    &__start {
+        font-family: 'Poppins';
+        @include font (400, 20px, $text-grey);
+        background: transparent;
+        border: solid $text-grey 1px;
+        border-radius: 15px;
+        padding: 23px 74px;
+        transition: 0.35s;
+    }
+    &__start:hover {
+        background: $bg-blue;
+        color: $text-white;
+        border: solid transparent 1px;
+        transition: 0.35s;
+    }
+
+    &__demo {
+        font-family: 'Poppins';
+        @include font (400, 20px, $text-grey);
+        background: transparent;
+        border: solid $text-grey 1px;
+        border-radius: 15px;
+        padding: 23px 89px;
+        transition: 0.35s;
+    }
+    &__demo:hover {
+        background: $bg-blue;
+        color: $text-white;
+        border: solid transparent 1px;
+        transition: 0.35s;
+    }
+
+    &__creators {
+        width: 500px;
+        height: 38px;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Poppins';
+        margin: 0 auto;
+
+        &--counterFirst {
+            @include font (700, 25px, $text-white);
+        }
+
+        &--counterSecond {
+            @include font (400, 25px, $text-grey);
+        }
+
+        &--dot {
+            width: 28px;
+        }
+    }
+}
